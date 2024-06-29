@@ -440,8 +440,9 @@ def final_strategy(score, opponent_score, cutoff=4, goal=GOAL_SCORE, num_rolls=6
     """Write a brief description of your final strategy.
 
     *** YOUR DESCRIPTION HERE ***
-    1. Simply choose the one with the possibly maximun score unless it's close to the goal_score:
+    1. choose the one with the possibly maximun score unless it's close to the goal_score:
         numrolls would equal to the max_scoring_num_rolls since RuntimeError: Your final strategy should not call max_scoring_num_rolls.
+        if the best choice would give the opponent an advantage like extra_turn or good free_bacon, choose the num_rolls
     """
     # BEGIN PROBLEM 12
     # return 6  # Replace this statement
